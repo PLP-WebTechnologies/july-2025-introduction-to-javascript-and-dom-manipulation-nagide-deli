@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My App - Enhanced with DOM</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div>
+        <nav>
+            <a href="#" id="homeLink">Home</a>
+            <a href="#" id="aboutLink">About</a>
+            <a href="#" id="contactLink">Contact</a>
+        </nav>
+    </div>
+
+    <div class="container">
+        <section id="home">
+            <h1>Welcome to My App</h1>
+            <p>This is a simple application that helps you navigate life's challenges. Get started by exploring our features!</p>
+            <div class="interactive-demo">
+                <h2>Interactive Demo</h2>
+                <p>Change the theme of this website:</p>
+                <button id="themeToggle">Toggle Dark/Light Mode</button>
+                <p>Current theme: <span id="themeStatus">Light</span></p>
+            </div>
+        </section>
+
+        <section id="about">
+            <h1>About Us</h1>
+            <p>My app is aimed at creating a simple way to navigate life. We offer great advice on anything that you may require an input on. Stay tuned for more.</p>
+            
+            <div class="team-section">
+                <h2>Our Team <button id="toggleTeam">Show/Hide</button></h2>
+                <div id="teamList">
+                    <div class="team-member">John Doe - Founder</div>
+                    <div class="team-member">Jane Smith - Advisor</div>
+                    <div class="team-member">Mike Johnson - Developer</div>
+                </div>
+            </div>
+
+            <div class="counter-section">
+                <h2>Visitor Counter</h2>
+                <p>This page has been viewed <span id="viewCount">0</span> times.</p>
+                <button id="resetCounter">Reset Counter</button>
+            </div>
+        </section>
+
+        <section id="contact">
+            <h1>Contact Us</h1>
+            <p>Feel free to reach out to us with any questions or feedback!</p>
+
+            <form id="contactForm">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+                
+                <button type="submit">Submit</button>
+            </form>
+
+            <div id="formStatus"></div>
+
+            <div class="social-links">
+                <h2>Follow Us</h2>
+                <button class="social-btn" data-platform="twitter">Twitter</button>
+                <button class="social-btn" data-platform="facebook">Facebook</button>
+                <button class="social-btn" data-platform="instagram">Instagram</button>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <div class="footer-nav">
+            <a href="#" id="footerHomeLink">Home</a>
+            <a href="#" id="footerAboutLink">About</a>
+            <a href="#" id="footerContactLink">Contact</a>
+        </div>  
+        <p>&copy; 2025 My App | <span id="currentYear"></span></p>
+        <p>Last updated: <span id="lastUpdated"></span></p>
+    </footer>
+    
+    <script src="script.js"></script>
+</body>
+</html>
